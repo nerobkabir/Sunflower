@@ -1,0 +1,110 @@
+[
+  {
+    "skillId": 1,
+    "skillName": "Beginner Guitar Lessons",
+    "providerName": "Alex Martin",
+    "providerEmail": "alex@skillswap.com",
+    "price": 20,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "Acoustic guitar classes for complete beginners.",
+    "image": "https://i.ibb.co.com/4w28vB8L/Music-Shutterstock-1536x1134.jpg",
+    "category": "Music"
+  },
+  {
+    "skillId": 2,
+    "skillName": "Spoken English Practice",
+    "providerName": "Sara Hossain",
+    "providerEmail": "sara@skillswap.com",
+    "price": 10,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Conversational English sessions for non-native speakers.",
+    "image": "https://i.ibb.co.com/pvZDBCwh/languages-signpost.jpg",
+    "category": "Language"
+  },
+  {
+    "skillId": 3,
+    "skillName": "Yoga for Beginners",
+    "providerName": "Rafiq Ahmed",
+    "providerEmail": "rafiq@skillswap.com",
+    "price": 15,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Introductory yoga sessions for flexibility and relaxation.",
+    "image": "https://i.ibb.co.com/XdHM4Ph/n-Nir91l-Ji-X.jpg",
+    "category": "Health"
+  },
+  {
+    "skillId": 4,
+    "skillName": "Web Development Basics",
+    "providerName": "Nadia Karim",
+    "providerEmail": "nadia@skillswap.com",
+    "price": 30,
+    "rating": 4.7,
+    "slotsAvailable": 2,
+    "description": "Learn HTML, CSS, and basic JavaScript to build websites.",
+    "image": "https://i.ibb.co.com/KMYsxqC/The-Role-of-Technology-in-Modern-Society.jpg",
+    "category": "Technology"
+  },
+  {
+    "skillId": 5,
+    "skillName": "Photography 101",
+    "providerName": "Imran Khan",
+    "providerEmail": "imran@skillswap.com",
+    "price": 25,
+    "rating": 4.5,
+    "slotsAvailable": 3,
+    "description": "Learn the basics of DSLR photography and composition.",
+    "image": "https://i.ibb.co.com/dwqPmWZX/painting-brushes-scaled.jpg",
+    "category": "Art"
+  },
+  {
+    "skillId": 6,
+    "skillName": "French Language Lessons",
+    "providerName": "Lea Dubois",
+    "providerEmail": "lea@skillswap.com",
+    "price": 18,
+    "rating": 4.8,
+    "slotsAvailable": 6,
+    "description": "Beginner to intermediate French conversation classes.",
+    "image": "https://i.ibb.co.com/nsnRx4Qt/1440-LL-language-feat-1030x580.jpg",
+    "category": "Language"
+  },
+  {
+    "skillId": 7,
+    "skillName": "Advanced Piano Lessons",
+    "providerName": "Maya Patel",
+    "providerEmail": "maya@skillswap.com",
+    "price": 35,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Intermediate to advanced piano classes for enthusiasts.",
+    "image": "https://i.ibb.co.com/Ndbm71qv/images.jpg",
+    "category": "Music"
+  },
+  {
+    "skillId": 8,
+    "skillName": "Digital Marketing Basics",
+    "providerName": "Rana Chowdhury",
+    "providerEmail": "rana@skillswap.com",
+    "price": 28,
+    "rating": 4.6,
+    "slotsAvailable": 5,
+    "description": "Learn SEO, social media, and online marketing fundamentals.",
+    "image": "https://i.ibb.co.com/mVf695m6/images-1.jpg",
+    "category": "Technology"
+  },
+  {
+    "skillId": 9,
+    "skillName": "Creative Writing Workshop",
+    "providerName": "Anika Rahman",
+    "providerEmail": "anika@skillswap.com",
+    "price": 22,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Enhance your storytelling and writing skills.",
+    "image": "https://i.ibb.co.com/KpY6Vn7b/images-2.jpg",
+    "category": "Art"
+  }
+]
