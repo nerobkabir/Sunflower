@@ -19,12 +19,8 @@ Skillswap allows users to create profiles, list their skills, find other users w
 ## Technologies & NPM Packages Used
 - **React** - Frontend library for building UI  
 - **React Router** - Client-side routing  
-- **Firebase** - Authentication and backend database  
+- **Firebase** - Authentication 
 - **React Hot Toast** - Notifications  
 - **React Icons** - Icon library  
 - **Tailwind CSS** - Styling and responsive design  
 
-## Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/your-username/skillswap.git
