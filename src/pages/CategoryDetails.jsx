@@ -8,8 +8,6 @@ const CategoryDetails = () => {
   const [formData, setFormData] = useState("");
 
 
-  
-
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.success("Session booked successfully!");

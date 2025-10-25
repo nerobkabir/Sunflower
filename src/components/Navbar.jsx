@@ -37,7 +37,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Authentication Section */}
+      {/* Authentication */}
       <div className="flex-1 flex justify-end">
         {user ? (
           <div className="flex items-center gap-4 relative">
