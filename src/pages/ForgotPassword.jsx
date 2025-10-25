@@ -7,14 +7,12 @@ const ForgotPassword = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
 
-  // ✅ Login page থেকে পাঠানো email auto-fill করবে
   useEffect(() => {
     if (location.state?.email) {
       setEmail(location.state.email);
     }
   }, [location.state]);
 
-  // ✅ Reset password handler
   const handleReset = (e) => {
     e.preventDefault();
 
@@ -25,7 +23,6 @@ const ForgotPassword = () => {
 
     toast.success("Password reset link sent to your email!");
 
-    // ১ সেকেন্ড পর Gmail এ রিডিরেক্ট করবে
     setTimeout(() => {
       window.location.href = "https://mail.google.com";
     }, 1000);
