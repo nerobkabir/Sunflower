@@ -13,14 +13,14 @@ const CategoryDetails = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     toast.success("Session booked successfully!");
-    setFormData({ name: "", email: "" }); // Clear form
+    setFormData({ name: "", email: "" });
   };
 
   return (
     <div className="max-w-5xl mx-auto p-6 space-y-10">
       <Toaster position="top-center" reverseOrder={false} />
 
-      {/* Skill Info Section */}
+      {/* Skill Info */}
       <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col md:flex-row gap-8">
         <img
           src={skill.image}
@@ -63,7 +63,7 @@ const CategoryDetails = () => {
         </div>
       </div>
 
-      {/* Book Session Form */}
+      {/* Book Form */}
       <div className="bg-gray-50 p-6 rounded-2xl shadow-md">
         <h2 className="text-2xl font-semibold mb-4 text-gray-800">
           Book a Session
@@ -93,10 +93,10 @@ const CategoryDetails = () => {
             className="input input-bordered w-full p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
           />
 
-          <div className="col-span-1 md:col-span-2 flex justify-end">
+          <div className="col-span-1 md:col-span-2 flex justify-end ">
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+              className="w-full bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
             >
               Submit
             </button>

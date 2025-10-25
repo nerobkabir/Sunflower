@@ -7,6 +7,7 @@ import Login from "../pages/Login";
 import SignUp from "../pages/SignUp";
 import PrivateRoute from "../privateRouter/PrivateRoute";
 import MyProfile from "../pages/MyProfile";
+import ForgotPassword from "../pages/ForgotPassword";
 
 
 export const router = createBrowserRouter([
@@ -16,7 +17,7 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        path: "/home",
+        path: "/",
         element: <Home />,
         loader: () => fetch("/category.json").then(res => res.json()),
       },
@@ -53,6 +54,9 @@ export const router = createBrowserRouter([
         path: "/auth/signup",
         element: <SignUp />,
       },
+      { 
+        path: "/auth/forgot-password", 
+        element: <ForgotPassword /> },
     ],
   },
 ]);

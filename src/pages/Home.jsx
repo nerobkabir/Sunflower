@@ -6,18 +6,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { FaGuitar, FaGlobeEurope, FaLaptopCode } from "react-icons/fa";
 
-// Modules import
 import { Autoplay } from "swiper/modules";
 import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 
-
 const Home = () => {
-  const skills = useLoaderData(); // loader থেকে data নিলাম
+  const skills = useLoaderData(); 
 
   return (
     <div className="space-y-12">
-      {/* Hero Slider */}
       <section className="relative w-full h-96">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
@@ -43,7 +40,7 @@ const Home = () => {
         </Swiper>
       </section>
 
-      {/* Popular Skills */}
+      {/* Skills Show */}
       <section className="px-6">
         <h2 className="text-2xl font-bold mb-6">Popular Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -73,7 +70,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Top Rated Providers (Static Example) */}
+      {/* Top Rated Providers */}
       <section className="px-6">
         <h2 className="text-2xl font-bold mb-6">Top Rated Providers</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -95,7 +92,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* How It Works Section */}
+      {/* How It Works */}
       <section className="px-6 py-12 bg-gray-100 rounded-lg">
         <h2 className="text-2xl font-bold mb-6 text-center">How It Works</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
@@ -114,6 +111,7 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Success Spotlight */}
 
       <section className="bg-gray-50 py-16 px-6">
         <div className="max-w-6xl mx-auto text-center">
@@ -125,7 +123,6 @@ const Home = () => {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* Story Card 1 */}
             <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div className="flex justify-center mb-4 text-blue-600 text-5xl">
                 <FaGuitar />
@@ -139,7 +136,7 @@ const Home = () => {
               <p className="text-sm text-blue-600 mt-3 font-medium">– Alex Martin</p>
             </div>
 
-            {/* Story Card 2 */}
+          
             <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div className="flex justify-center mb-4 text-green-600 text-5xl">
                 <FaGlobeEurope />
@@ -153,7 +150,7 @@ const Home = () => {
               <p className="text-sm text-blue-600 mt-3 font-medium">– Sara Ahmed</p>
             </div>
 
-            {/* Story Card 3 */}
+            
             <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div className="flex justify-center mb-4 text-purple-600 text-5xl">
                 <FaLaptopCode />

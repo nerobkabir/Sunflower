@@ -13,7 +13,6 @@ const Navbar = () => {
 
   return (
     <div className="navbar bg-base-100 shadow-md px-6 flex justify-between items-center">
-      {/* Logo */}
       <div className="flex-1">
         <Link
           to="/"
@@ -23,11 +22,10 @@ const Navbar = () => {
         </Link>
       </div>
 
-      {/* Navigation Links */}
       <div className="flex-1 text-center">
         <ul className="inline-flex space-x-6 font-medium text-gray-800">
           <li>
-            <Link to="/home" className="hover:text-primary transition">
+            <Link to="/" className="hover:text-primary transition">
               Home
             </Link>
           </li>
@@ -39,20 +37,18 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Auth Section */}
+      {/* Authentication Section */}
       <div className="flex-1 flex justify-end">
         {user ? (
-          // ✅ When logged in
-          <div className="flex items-center gap-4">
-            {/* Avatar */}
+          <div className="flex items-center gap-4 relative">
             <div className="relative group">
               <img
-                src={user.photoURL || "https://i.ibb.co/5GzXkwq/user.png"}
+                src={"https://i.ibb.co/5GzXkwq/user.png"} 
                 alt="User Avatar"
-                className="w-10 h-10 rounded-full border-2 border-primary cursor-pointer"
+                className="w-10 h-10 rounded-full border-2 border-primary cursor-pointer object-cover"
               />
-              <div className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 bg-base-200 text-sm text-center px-3 py-1 rounded-md shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                {user.displayName || "User"}
+              <div className="absolute left-1/2 -translate-x-1/2 top-12 opacity-0 group-hover:opacity-100 bg-base-200 text-sm text-gray-700 text-center px-3 py-1 rounded-md shadow-md transition-opacity duration-200 whitespace-nowrap z-10">
+                {user?.displayName || "User"}
               </div>
             </div>
 
@@ -65,7 +61,6 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          // ✅ When logged out
           <div className="flex items-center gap-3">
             <Link to="/auth/login">
               <button className="btn btn-outline btn-primary hover:bg-primary hover:text-white transition">

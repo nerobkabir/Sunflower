@@ -9,12 +9,10 @@ const Root = () => {
         
             <Navbar />
 
-    
             <main className="flex-1 w-full">
                 <Outlet></Outlet>
             </main>
 
-    
             <Footer />
         </div>
     );
