@@ -1,14 +1,18 @@
 import React, { useContext, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom"; 
 import { AuthContext } from "../provider/AuthProvider";
 import { FaGoogle, FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const { login_user, google_sign_in } = useContext(AuthContext);
   const navigate = useNavigate();
-  const [emailValue, setEmailValue] = useState(""); 
-  const [showPassword, setShowPassword] = useState(false); 
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/"; 
+
+  const [emailValue, setEmailValue] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   // email-password login
   const handleSubmit = (e) => {
@@ -20,10 +24,10 @@ const Login = () => {
       .then(() => {
         toast.success("Login successful!");
         setTimeout(() => {
-          navigate("/");
+          navigate(from, { replace: true }); 
         }, 800);
       })
-      .catch(() => toast.error("Login failed!"));
+      .catch(() => toast.error("Login failed! Please check your credentials."));
   };
 
   // Google Sign-In
@@ -32,7 +36,7 @@ const Login = () => {
       .then(() => {
         toast.success("Logged in with Google!");
         setTimeout(() => {
-          navigate("/");
+          navigate(from, { replace: true });
         }, 800);
       })
       .catch(() => toast.error("Google sign-in failed!"));
@@ -88,7 +92,7 @@ const Login = () => {
               />
               <span
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-4 top-[45px]  cursor-pointer text-gray-600 hover:text-emerald-600"
+                className="absolute right-4 top-[45px] cursor-pointer text-gray-600 hover:text-emerald-600"
               >
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </span>
@@ -118,7 +122,7 @@ const Login = () => {
               <hr className="flex-1 border-gray-300" />
             </div>
 
-            {/* google login */}
+            {/* Google Login */}
             <button
               type="button"
               onClick={handleGoogleSignIn}
