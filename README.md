@@ -21,7 +21,4 @@ For example, users can provide or learn guitar lessons, language exchange, codin
 - `axios` – HTTP requests (if any API calls are used)
 - `tailwindcss` – Styling (if used)
 
-## How to Run Locally
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/yourusername/skillswap.git
+
