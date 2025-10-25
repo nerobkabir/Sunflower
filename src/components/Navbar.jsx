@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100 shadow-md px-6 flex justify-between items-center">
+    <div className="navbar bg-gray-200 shadow-md px-6 flex justify-between items-center">
       <div className="flex-1">
         <Link
           to="/"

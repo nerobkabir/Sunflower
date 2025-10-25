@@ -14,7 +14,7 @@ const Home = () => {
   const skills = useLoaderData(); 
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 bg-gray-100">
       <section className="relative w-full h-96">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
@@ -27,7 +27,7 @@ const Home = () => {
           {skills.slice(0, 5).map((skill) => (
             <SwiperSlide key={skill.skillId}>
               <div
-                className="w-full h-96 bg-cover bg-center flex items-center justify-center"
+                className="w-full h-96 bg-cover bg-center flex items-center justify-center mt-7"
                 style={{ backgroundImage: `url(${skill.image})` }}
               >
                 <div className="bg-black bg-opacity-40 p-6 rounded text-white text-center">
