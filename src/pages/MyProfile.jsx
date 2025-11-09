@@ -38,7 +38,6 @@ const MyProfile = () => {
       <Toaster position="top-center" />
 
       <div className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/40 p-10 max-w-md w-full text-center space-y-6 transition-all duration-300">
-        {/* profile image */}
         <div className="flex justify-center">
           <img
             src={localPhoto || "https://i.ibb.co/5GzXkwq/user.png"}
