@@ -7,8 +7,7 @@
 Skillswap allows users to create profiles, list their skills, find other users with skills they want to learn, and connect with them easily. The goal is to foster collaborative learning and networking.
 
 ## Live URL
-[harmonious-paprenjak-77441a.netlify.app](harmonious-paprenjak-77441a.netlify.app)
-
+https://harmonious-paprenjak-77441a.netlify.app
 ## Key Features
 - **User Authentication:** Sign up, login, and logout with email/password and Google OAuth.
 - **Profile Management:** Users can view and edit their profiles.
